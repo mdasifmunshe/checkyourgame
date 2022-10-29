@@ -1,0 +1,116 @@
+.filter {
+  padding: 16px;
+}
+
+.heading {
+  margin: 0 28px;
+  font-size: 14px;
+}
+
+.search_box {
+  margin: 28px;
+  color: rgb(245, 245, 245);
+  background-color: rgb(32, 32, 32);
+  border-radius: 4px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+.search_box > input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.search_box > input:focus {
+  outline: none;
+}
+
+.filter_cont {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+}
+
+.line {
+  background-color: rgb(245, 245, 245);
+  opacity: 0.1;
+  height: 1px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.checkbox {
+  border-radius: 4px;
+  position: relative;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border-radius: 4px;
+}
+
+.input ~ div {
+  background-color: var(--main-black);
+}
+
+.input:checked ~ div {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.input:checked .checkbox {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.check {
+  opacity: 0;
+  font-size: 20px;
+}
+
+.input:checked ~ div > .check {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .bottom_navbar {
+    display: none;
+  }
+
+  .filter_cont {
+    padding: 0;
+  }
+
+  .heading {
+    margin: 0;
+  }
+
+  .filter {
+    padding: 16px 0;
+  }
+
+  .search_box {
+    margin: 28px 0;
+  }
+}
