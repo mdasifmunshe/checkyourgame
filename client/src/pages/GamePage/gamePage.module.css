@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .gamePage_container {
+    margin: 0px 74px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .gamePage_container {
+    margin: 0px 132px;
+  }
+}
