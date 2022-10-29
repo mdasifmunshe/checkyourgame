@@ -1,0 +1,27 @@
+{
+  "name": "checkyourgame-backend",
+  "version": "1.0.0",
+  "description": "checkyourgame backend",
+  "main": "index.js",
+  "scripts": {
+    "start:heroku": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "6.14.12"
+  },
+  "author": "Md Asif Munshe",
+  "license": "None",
+  "dependencies": {
+    "connect-redis": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.1",
+    "passport": "^0.5.0",
+    "passport-google-oauth20": "^2.0.0",
+    "redis": "^3.1.2"
+  }
+}
